@@ -28,7 +28,8 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 #install ngrok
-brew cask install ngrok
+# brew cask install ngrok
+ brew install --cask ngrok
 
 #configure ngrok and start it
 ngrok authtoken $3
