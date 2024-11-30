@@ -13,6 +13,7 @@ sudo dscl . -create /Users/vncuser NFSHomeDirectory /Users/vncuser
 sudo dscl . -passwd /Users/vncuser $1
 sudo dscl . -passwd /Users/vncuser $1
 sudo createhomedir -c -u vncuser > /dev/null
+echo "--- $1"
 
 #Enable VNC
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
